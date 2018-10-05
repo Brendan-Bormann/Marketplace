@@ -1,28 +1,104 @@
-.App {
+body {
+  margin: 0;
+  padding: 0 0 10vh 0;
+  font-family: sans-serif;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-image: url(https://technology.inquirer.net/files/2017/10/the-most-famous-windows-wallpaper-ever-turns-20-505668-2.jpg);
+}
+
+.Container {
+
+  background: rgb(68, 68, 68);
+  height: 100%;
+  width: 90vw;
+
   text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
   color: white;
 }
 
-.App-title {
-  font-size: 1.5em;
+.Container h1 {
+  width: 100%;
+  background: rgb(51, 51, 238);
 }
 
-.App-intro {
-  font-size: large;
+.Startbar
+{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+
+  margin: 0;
+  padding: 0;
+
+  height: 4vh;
+  width: 100vw;
+  background: rgb(51, 62, 228);
+  position: fixed;
+  bottom: 0;
+  left: 0;
 }
 
-@keyframes App-logo-spin {
+.home-button
+{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 10vw;
+  height: 4vh;
+
+  color: white;
+  font-size: 1rem;
+
+}
+
+.start {
+  background: rgb(13, 185, 13);
+  border-radius: 5px 5px 0 0;
+  width: 12vw;
+
+  margin-right: 25px;
+}
+
+.startItem
+{
+  background: #028c91;
+}
+
+.logo-main {
+  animation: logo-spin infinite 20s linear;
+
+  height: 4vw;
+  width: 4vw;
+
+  position: fixed;
+  bottom: 0;
+  right: 0;
+
+  margin: 0.5vw;
+}
+
+@keyframes logo-spin {
   from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+  to { transform: rotate(1080deg); }
+}
+
+.link-clear {
+  text-decoration: none;
+}
+
+.StartMenu {
+  height: 60vh;
+  width: 25vw;
+
+  position: fixed;
+  bottom: 5vh;
+  left: 0;
+
+  background: #2a769a;
 }
